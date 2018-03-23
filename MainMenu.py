@@ -44,7 +44,6 @@ while Loop_Control_Variable == 1:           # The program runs via this loop
         print(" Thank you for running this program.")
         print(" ____________________________________\n")
         Loop_Control_Variable = 0           # This ends The Loop
-        break
     #
     elif Menu_Input == "1":                 # 1: Instructions Option selected.
         print("\n Enter a number to select an option of off the menu.")
@@ -60,7 +59,6 @@ while Loop_Control_Variable == 1:           # The program runs via this loop
             print("\n Thank you for running this program.")
             print(" ____________________________________\n")
             Loop_Control_Variable = 0
-            break
         else:                               # Outputs
             Number_of_Dice = int(Number_of_Dice)
             Roll = random.randint(Number_of_Dice, Number_of_Dice*6) # Generates a random
@@ -92,7 +90,7 @@ while Loop_Control_Variable == 1:           # The program runs via this loop
         # Prints exit message
         print("\n Thank you for running this program.")
         print(" ____________________________________\n")
-        break
+        Loop_Control_Variable = 0
     #
     else:                   # If the user entered something not on the list
         print(" Please enter an option listed on the menu.")
