@@ -1,0 +1,11 @@
+Condition = 1
+if Condition == 1:
+    Statement = 1
+while Condition == 1:
+    Statement = 1
+for i in range(1,10):
+    Statement = i
+print("This " + " is " + " concatenation.")
+print("This", "is", "a regular print.")
+def FunctionName(arguement 1, arguement 2):
+    return arguement1
